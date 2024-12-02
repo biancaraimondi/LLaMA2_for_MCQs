@@ -1,0 +1,2295 @@
+[
+    {
+        "question": "What problems first inspired the introduction of types?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "reference handling",
+            "b": "set theory paradoxes",
+            "c": "memory leaks",
+            "d": "unhandled exceptions"
+        },
+        "explanation": "The introduction of types was initially inspired by set theory paradoxes, such as Russell's paradox, which revealed inconsistencies in foundational principles of mathematics. Types were introduced to establish a more rigorous and well-defined system, preventing logical contradictions within mathematical and programming frameworks.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is a typing discipline in computer science?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "A method to prove the absence of undesirable behaviours in computer programs based on the classification of their syntactic units and the values they assume",
+            "b": "A method to annotate program units, so that programmers can write their assumptions on code like pre-conditions and post-conditions, to help them verify that their programs execute as intended",
+            "c": "A method to abstract the logic of programs away from low-level machine code, making it possible for developers to express complex behaviours in a few lines of code",
+            "d": "A method to increase the speed of programs by providing the compiler with information on which parts of the program are unreachable, which are safe to remove in the compiled binary"
+        },
+        "explanation": "A typing discipline in computer science involves classifying and analyzing the types of variables and expressions in a program to ensure the absence of certain undesirable behaviors. It aims to catch type-related errors and provide a level of assurance about the correctness of the program.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is the main difference between dynamic and static typing?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "In static typing operation invocation is statically determined, while in dynamic typing operation invocation works using dynamic dispatch",
+            "b": "In static typing, code is statically linked and can only access the static memory in the stack, while in dynamic typing programs can access also dynamic memory in the heap",
+            "c": "In static typing, the value of variables can only assume values that are statically determined, while in dynamic typing variables can assume any value defined dynamically at runtime",
+            "d": "In static typing, type checking happens before program execution and in dynamic typing it happens while the program executes"
+        },
+        "explanation": "Static typing involves checking and enforcing types at compile-time, before the program runs, whereas dynamic typing checks types during runtime, allowing for more flexibility but potentially leading to runtime errors if types are mismatched.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is the main difference between manifest and inferred typing?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Manifest typing requires every variable's value to be declared explicitly, inferred typing lets the computer decide what values to assign to variables",
+            "b": "Manifest typing uses annotations to define the type of variables, inferred typing employs mechanisms to deduce the type of variables based on the values they assume",
+            "c": "Manifest typing forces the programmer to use the types defined by the programming language while inferred typing lets the programmer define its own types",
+            "d": "Manifest typing provides guidelines for the programmer on which types are more appropriate to use, inferred typing leaves to the programmer the task of figuring out what types are more appropriate"
+        },
+        "explanation": "In manifest typing, programmers explicitly declare variable types through annotations, while in inferred typing, the compiler determines variable types based on the assigned values, offering a more flexible and concise coding experience.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What are the inhabitants of a type?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Valid values according to the definition of that type",
+            "b": "First-class citizens that form the ecosystem of the type system",
+            "c": "Modular components of the type system that one can combine as needed",
+            "d": "Language constructs that let values interact with each other"
+        },
+        "explanation": "The inhabitants of a type are the set of values that are considered valid or well-formed according to the rules and constraints defined by that type in a programming language's type system.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What are examples of basic types in programming languages?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Arrays, Sets, and Lists",
+            "b": "Any subtype of the Top type",
+            "c": "Unit, Booleans, and Integers",
+            "d": "Any type found in a Sum or Product type"
+        },
+        "explanation": "Basic types in programming languages typically include fundamental data types like Unit (representing absence of a meaningful value), Booleans (True or False), and Integers (whole numbers). These types serve as the building blocks for more complex data structures and are essential for expressing a wide range of computational concepts.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is the main difference between the Void and Unit types?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "The Unit type includes only one value while Void includes none",
+            "b": "Functional languages need the Unit type while imperative languages need Void",
+            "c": "Void encapsulates data while Unit makes the data directly accessible",
+            "d": "Void never carries a value while Unit always carries one"
+        },
+        "explanation": "The Unit type typically has a single value, often denoted as (), indicating the absence of meaningful data. On the other hand, Void is a type that usually represents the absence of a value altogether, and it is less commonly used in programming languages.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is the main difference between the Integer and Float types?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Integer values occupy less memory than Float ones",
+            "b": "Integers represent whole numbers, Floats are instead part of a number, for instance, only the decimal part",
+            "c": "Integers represent integer numbers, Floats represent decimals with user-defined precision",
+            "d": "Integers represent integer numbers, Floats represent real numbers with fixed precision"
+        },
+        "explanation": "The main difference between the Integer and Float types is that Integers represent integer numbers, while Floats represent real numbers with fixed precision. The other options are not correct. Option a is incorrect because both Integer and Float values occupy the same amount of memory. Option b is incorrect because while Integers represent whole numbers, Floats can also represent whole numbers, and both types can represent decimals. Option c is incorrect because while Integers represent integer numbers, Floats can also represent integer numbers. Therefore, option d is the correct answer.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is the main difference between Extensional and Intensional types?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "The programmer can extend an Extensional type, Intensional types are non-extensible",
+            "b": "Extensional types leave their usage purpose unspecified, Intensional types carry their intended purpose",
+            "c": "Extensional types define the list of their values, Intensional types define their values via inclusion predicates",
+            "d": "Extensional types are defined in external modules, Intensional types are defined within the program"
+        },
+        "explanation": "Extensional types explicitly list their valid values, while intensional types define their values based on specific conditions or predicates. Intensional types provide a more abstract and flexible way of defining sets of values.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is a buffer overflow, considering the Array type?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "A situation where an Array value increases its size when the data exceeds its current capacity",
+            "b": "A situation where an Array value is used as an attack vector to access the source code of the program",
+            "c": "A situation where an Array value passes from a static to a dynamic implementation, depending on the amount of data it carries",
+            "d": "A situation where an Array value gives write access to memory regions outside its boundaries"
+        },
+        "explanation": "Buffer overflow occurs when a program writes more data into an array (buffer) than it can hold, leading to overwriting adjacent memory. This can result in unintended consequences, such as altering variables or code execution, making it a common security vulnerability.",
+        "topic": "Memory Management"
+    },
+    {
+        "question": "What do row- and column-major order is for multidimensional Arrays?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "A method for representing multidimensional Arrays in linear memory, either favouring proximity of values within the same row or within the same column",
+            "b": "A method for optimising algorithms depending on whether the access to multidimensional Array cells happens following the ordering of the rows or of the columns",
+            "c": "A method for saving memory and allowing faster access hinged on storing information following the order imposed either by the columns or the rows",
+            "d": "A method for defining the implementation type of multidimensional Arrays, row- and column-major multidimensional Arrays are incompatible, regardless the content of their cells"
+        },
+        "explanation": "Row-major and column-major order refer to the way multidimensional arrays are stored in memory. In row-major order, consecutive elements of a row are stored adjacently, while in column-major order, consecutive elements of a column are stored adjacently. The choice depends on the memory access patterns of the specific algorithm or application.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is a dope vector?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "A method for representing multidimensional Arrays in linear memory, either favouring proximity of values within the same row or within the same column",
+            "b": "A method for optimising algorithms depending on whether the access to multidimensional Array cells happens following the ordering of the rows or of the columns",
+            "c": "A method for saving memory and allowing faster access hinged on storing information following the order imposed either by the columns or the rows",
+            "d": "A method for defining the implementation type of multidimensional Arrays, row- and column-major multidimensional Arrays are incompatible, regardless the content of their cells"
+        },
+        "explanation": "A dope vector is a method for representing multidimensional arrays in linear memory, either favoring proximity of values within the same row or within the same column. The term 'dope' refers to the fact that the array is laid out in a 'doped' or deliberate manner to optimize access patterns.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is a dope vector?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "A dope vector is the data structure that contains the essential information of a programming language's constructs",
+            "b": "A dope vector is a data structure used to efficiently implement dynamic dispatch",
+            "c": "A dope vector is a data structure used to implement Array values that do not suffer from buffer-overflow situations",
+            "d": "A dope vector is a data structure that supports the implementation of dynamically-sized arrays"
+        },
+        "explanation": "A dope vector is a data structure that supports the implementation of dynamically-sized arrays. Dope vectors are designed to avoid buffer-overflow situations, which can occur when arrays are resized and the new size exceeds the capacity of the array. By using a dope vector, the array's size can be efficiently resized without overflowing the buffer, which can lead to memory safety issues.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is the typical language construct used to handle values of Sum types?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Exception handling, e.g., if values are of the type 'Success', then the execution proceeds as intended; contrarily, an 'Exception' value triggers the 'catch' block",
+            "b": "Pattern matching, which allows one to structure the branches of the computation depending on the specific type of the value",
+            "c": "Loops, like 'for' and 'while', which are the only constructs for unfolding the values of a recursive Sum type",
+            "d": "Generics, which allow users to abstract over parts of the Sum type that are not of interest and to focus on the parts they need to work on"
+        },
+        "explanation": "Pattern matching is a language construct commonly used to handle values of Sum types by allowing the programmer to define different behaviors or computations based on the specific variant or constructor of the Sum type.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is an important limitation of using Product types to represent a recursive type?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Product types add to each level of recursion increased memory usage, leading to an exponentially-large occupation of memory",
+            "b": "Product types cannot represent recursive types, since the syntactical definition would itself be infinite",
+            "c": "Product types need special values, such as those found in reference types, to capture terminal values in recursive types",
+            "d": "Product types can represent a subset of the possible recursive types, for instance they can represent linked lists but not doubly-linked lists"
+        },
+        "explanation": "Product types can represent recursive types, but they need to include special values to capture terminal values in those types. In other words, when defining a recursive type using a Product type, you need to include a special value to represent the end of the recursion. This is a limitation of Product types, since Sum types do not need special values to represent recursive types.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is duck typing?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Duck typing is a typing discipline where the runtime interprets the behaviour of the code depending on its context of execution",
+            "b": "Duck typing is a typing discipline that dispenses the use of types at runtime thanks to preliminary strong static checks",
+            "c": "Duck typing is a typing discipline that uses structural similarity of types to avoid type annotations",
+            "d": "Duck typing is a typing discipline where checks follow the interaction of the program with the values"
+        },
+        "explanation": "Duck typing allows type manipulation without explicit annotations. Rather than enforcing strict type adherence, duck typing relies on dynamic checks, depending on the method's invocation. A method's parameters and return value determine its 'acceptable' type at runtime, even if not specified explicitly. This technique enables cleaner class design without worrying about complex type requirements.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "From a program design standpoint, what is a strong difference between nominal and structural typing?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Nominal typing uses symbols to distinguish different functions, whereas all functions are the same for a structural type system",
+            "b": "Nominal typing supports subtyping while structure typing cannot express one such relation",
+            "c": "Nominal typing distinguishes between types with different names but with the same structure, while these are equivalent in structural typing",
+            "d": "Nominal typing assigns names to types but does not specify their implementation, structural typing describes a type's implementation but leaves it unnamed"
+        },
+        "explanation": "In nominal typing, types are considered distinct based on their names, even if their structures are identical. In contrast, structural typing considers types equivalent if their structures match, regardless of their names, offering a more flexible approach to type compatibility.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is the difference between type coercion and type casting?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Type coercion automatically arranges the representation of values in memory, type casting arranges value representation following the user's instructions",
+            "b": "Type coercion temporarily converts a value into one of another type, type casting permanently converts the value into the given type",
+            "c": "Type coercion implicitly converts value types, type casting is an explicit instruction for types conversion",
+            "d": "Type coercion transform values into the types defined by the user, type casting transforms the values into types defined by external modules"
+        },
+        "explanation": "Type coercion automatically handles conversions between types based on context, while type casting is a deliberate and explicit instruction from the programmer to convert a value to a specific type.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What is the unification algorithm mainly used for in the context of type systems?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "The unification algorithm is mainly used to solve problems of type conversion found at runtime",
+            "b": "The unification algorithm is mainly used to implement type inference",
+            "c": "The unification algorithm is mainly used to unify different implementations of the same types",
+            "d": "The unification algorithm is mainly used to verify if values are of the correct type"
+        },
+        "explanation": "The unification algorithm is employed in the realm of type systems for the purpose of implementing type inference, as indicated by option (b). The unification algorithm performs its magic by merging equal type constructors, resulting in a singular, unified type representation. This allows the type system to determine the types of expressions and statements without the need for explicit type annotations. Consequently, the unification algorithm is the magic wand that makes type inference an effortless endeavor!",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What does the code fragment below prints? Assume an object-oriented language with inheritance, dynamic dispatch, and static field binding. class A { int x = 3; int f( int y ){ return y + x; } } class B extends A { int x = 1; int f( int y ){ return super .f( x ) + y; } } class C extends B { int x = 4; int f( int y ){ return super .f( y ) + x; } } B x = new C (); print ( x.f( x.x ) );",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "4",
+            "b": "9",
+            "c": "8",
+            "d": "7"
+        },
+        "explanation": "In inheritance based language, a subclass can override members of its super classes by providing a new implementation. This overriding is dynamic in the sense that the correct method to call is determined at runtime based on the object's class type. In this question, B has overridden A's f() method. Given that B extends A, both B and A have an x field. The two f() methods have the same parameters and both return the same thing, i.e., the sum of the two parameters. However, the implementation of B's f() method calls super.f() with x as the parameter, which is the x field of B. Therefore, the result of the call to super.f() is 4, and the result of the call to x.f() is 9.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "Given the code fragment below, at what line a type checker that supports duck typing would raise an error? 1. type A = record { int a , int b } 2. type B = record { int a } 3. type C = record { B x , A y } 4. type D = record { A x , B y } 5. f( C a , D b ){ 6.   b = a ; 7. return a.x.b; }",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "5",
+            "b": "6",
+            "c": "7",
+            "d": "none of the above"
+        },
+        "explanation": "The correct answer is 'd' because the statement 'b = a' in line 5 is an assignment, not a type check, and therefore, the type checker would not raise an error here. However, in line 7, the expression 'a.x.b' is trying to access the member 'b' of the type 'A' through a pointer to 'B', which is not a valid type check and would raise an error.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "In a pseudolanguage, the 'new' keyword creates a new object in the heap. The list of integers 'ListInt' occupies 1 byte, in addition to the space occupied by the contained Integers. An Integer occupies 1 byte, while a Long occupies 4 bytes. 'ListInt' provides 'add', which adds an integer to the end, and 'get', which retrieves the integer at the given position. The pseudolanguage uses pass-by-reference and a stop-and-copy type of garbage collection. The garbage collector is activated once memory usage exceeds 80% of the available memory to the collector. The heap has a total of 30 bytes of memory and is assumed to be initially empty. How many times the garbage collector is called during the execution of the following code fragment? ListInt acc = new ListInt (); acc.add( new Int ( 0 ) ); acc.add( new Int ( 1 ) ); for( int i = 2; i < 7; i ++ ){ Long e = new Long ( acc.get( i -2 ) + acc.get( i -1 ) ); if( e % 2 != 0 ){ acc . add ( new Int ( e ) ); } else { acc.add( new Int ( e + 1 ) ); }}",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "4",
+            "b": "3",
+            "c": "5",
+            "d": "1"
+        },
+        "explanation": "The code fragments perform the following operations: * Creates a 'ListInt' object * Adds two 'Int' objects to the list * Iterates from 2 to 6, adds new Long objects, and checks the remainder of their sum mod 2  Four garbage collection messages have been requested due to the following reasons:  1. The creation of a new 'List' object in line 1, 2. The creation of a new 'Long' object in line 4, 3. The creation of a new 'Long' object in line 4, 4. The creation of a new 'Long' object in line 4.",
+        "topic": "Memory Management"
+    },
+    {
+        "question": "Assuming to have a language that adopts the locks and keys technique. Given a generic object OBJ in the heap, we denote OBJ.lock its lock (hidden). Given a variable p containing the value of a generic pointer (on the stack or in the heap), we denote p.key its key (hidden). What are the values of respectively p.key, p.next.key after the execution of the fragment below, considering that the keys of OBJ1.lock and OBJ2.lock are respectively 42 and 24? class C { C next; } \n C p = new C(); \/\/ object OBJ1 \n { p.next = new C(); } \/\/ object OBJ2",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "24, 42",
+            "b": "42, 24",
+            "c": "24, 24",
+            "d": "42, 42"
+        },
+        "explanation": "The given code creates two objects, OBJ1 and OBJ2, and assigns a reference to them to the p variable. Since the keys of OBJ1 and OBJ2 are respectively 42 and 24, and p points to OBJ1, the values of p.key and p.next.key after execution will be 42 and 24.",
+        "topic": "Memory Management"
+    },
+    {
+        "question": "Assume an object-oriented programming language with nominal types and pass-by-reference. Classes A, B, and C are such that B is a subclass of A, and C is a subclass of B. In the language, the type T[] indicates an array of objects of class T with covariant writes and reads with respect to subtypes. Indicate which instructions would be marked as not correct by the type checker. void f( A a, B b, C c, A[] aa, B[] bb, C[] cc ) { c = b; \/\/ I1 a = b; \/\/ I2 c = bb[ 0 ]; \/\/ I3 aa = bb; \/\/ I4 a = aa; \/\/ I5 bb = bb; \/\/ I6 a = bb[ 0 ]; \/\/ I7 aa[ 0 ] = cc; \/\/ I8 b = bb; \/\/ I9 aa[ 0 ] = cc[ 0 ]; \/\/ I10 cc = bb; \/\/ I11 c = bb[ 0 ]; \/\/ I12 }",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "I1, I2, I3, I5, I8, I10",
+            "b": "I2, I3, I4, I5, I7, I8, I10, I11, I12",
+            "c": "I1, I3, I5, I8, I9, I11, I12",
+            "d": "I2, I4, I5, I7, I8, I10, I11"
+        },
+        "explanation": "Covariant writes and reads in an array of objects with subtypes imply potential type-checking issues. Incorrect instructions involve assignments and array manipulations violating type relationships, marked as 'c.'",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "Which of the following is a programming language?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Python",
+            "b": "Photoshop",
+            "c": "Microsoft Word",
+            "d": "Adobe Illustrator"
+        },
+        "explanation": "The correct answer is Python because Python is a programming language used for web development, data analysis, artificial intelligence, and more. Photoshop is an image editing software, Microsoft Word is a word processing software, and Adobe illustrator is a vector graphic design software, none of which are programming languages.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which programming paradigm emphasizes on writing code that is easy to read and maintain?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Procedural programming",
+            "b": "Object-oriented programming",
+            "c": "Functional programming",
+            "d": "Structured programming"
+        },
+        "explanation": "Object-oriented programming is focused on writing code that is easy to read and maintain. This programming paradigm uses concepts such as encapsulation, inheritance, and polymorphism to create and manipulate objects. These concepts make the code more modular and easier to understand, as well as reduce the overall complexity of the code. Therefore, option (b) is the correct answer.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "What is the term used for a block of code that is executed repeatedly until a certain condition is met?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Function",
+            "b": "Loop",
+            "c": "Condition",
+            "d": "Variable"
+        },
+        "explanation": "The term used for a block of code that is executed repeatedly until a certain condition is met is called a 'loop' and it allows the same sequence of instructions to be executed repeatedly. The loop continues until a certain condition is fulfilled or until it is explicitly exited with a break or return statement.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "Which data structure is used for storing a collection of elements in a non-linear fashion?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Array",
+            "b": "Stack",
+            "c": "Queue",
+            "d": "Tree"
+        },
+        "explanation": "The correct answer is Tree because a tree data structure allows for efficient insertion, deletion, and searching of elements in a non-linear fashion, allowing for fast search, insert, and delete operations.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "Which operator is used for exponentiation in most programming languages?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "^",
+            "b": "*",
+            "c": "%",
+            "d": "**"
+        },
+        "explanation": "The correct answer is d) ** because it represents exponentiation in most programming languages. The caret (^) is commonly used for bitwise operations, while multiplication (*) and modulus (%) are not typically used for exponentiation. The ** operator is used to represent exponentiation in most programming languages.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "Which programming language is used for developing Android apps?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Java",
+            "b": "C#",
+            "c": "Python",
+            "d": "Swift"
+        },
+        "explanation": "The correct answer is a) Java because Android apps are developed using Java. The official development language for Android is Java, and most of the Android-specific APIs are written in Java. So, developers can use Java to develop Android apps and interact with the Android operating system. Java is a popular language for developing Android apps, and it's also used for developing other types of apps and software.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is not a valid variable name in most programming languages?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "myVariable",
+            "b": "123Variable",
+            "c": "_myVariable",
+            "d": "my_variable"
+        },
+        "explanation": "'123Variable' is not a valid variable name in most programming languages because it contains a number. Most programming languages reserve numbers for use as numerical values, not as variable names. Only letters, underscores, and dollar signs are valid characters in variable names. Therefore, option b is the correct answer.",
+        "topic": "Names and the Environment"
+    },
+    {
+        "question": "Which of the following is a type of sorting algorithm?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Binary search",
+            "b": "Quick sort",
+            "c": "Depth-first search",
+            "d": "Breadth-first search"
+        },
+        "explanation": "The correct answer is 'b' Quick sort. Quicksort is a type of sorting algorithm that is based on divide-and-conquer principle. It works by selecting a pivot element, partitioning the list into two parts, one with elements less than the pivot and one with elements greater than the pivot, and then recursively applying the same algorithm to each of these parts until the entire list is sorted. This makes it an efficient and stable sorting algorithm. The other options: a) Binary search, c) Depth-first search, and d) Breadth-first search, are all types of search algorithms. Therefore, option b) Quick sort is the correct answer.",
+        "topic": "Algorithms"
+    },
+    {
+        "question": "Which keyword is used for defining a function in most programming languages?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "def",
+            "b": "fun",
+            "c": "sub",
+            "d": "function"
+        },
+        "explanation": "The keyword 'def' is commonly used for defining a function. In many programming languages, such as Python, Java, C++, and more. It defines a block of code that can be called by name.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is not a data type in most programming languages?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Integer",
+            "b": "Float",
+            "c": "Double",
+            "d": "String"
+        },
+        "explanation": "The answer 'c' is not a data type in most programming languages because a double is a type of floating-point number that is not typically used as a data type itself, but rather as a numerical value within a data type. The other options: a) Integer, b) Float, and d) String, are all data types commonly found in programming languages. Thus, option c) Double is the correct answer.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "Which programming language is used for developing iOS apps?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Java",
+            "b": "C#",
+            "c": "Python",
+            "d": "Swift"
+        },
+        "explanation": "Swift is a programming language created by Apple for developing iOS apps. It is designed to give developers the ability to create powerful, modern apps with a clean and easy-to-read codebase. Swift is a replacement for Objective-C, which was the primary language for iOS development before.  So, the correct answer is 'd') Swift'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is not a relational operator in most programming languages?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "=",
+            "b": "==",
+            "c": "!=",
+            "d": "++"
+        },
+        "explanation": "'++' is an increment operator used to increase the value of a variable by one. It is not a relational operator. Relational operators are used to compare two expressions and return a boolean value (True or False). whereas increment operators change the value of a variable.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "Which data structure is used for implementing a Last-In-First-Out (LIFO) behavior?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Queue",
+            "b": "Stack",
+            "c": "Tree",
+            "d": "Linked list"
+        },
+        "explanation": "The correct answer is 'b' Stack. A stack data structure is used to implement a Last-In-First-Out (LIFO) behavior where the last item added to the stack is the first one to be removed.",
+        "topic": "Algorithms"
+    },
+    {
+        "question": "Which of the following is not a programming language?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "HTML",
+            "b": "CSS",
+            "c": "JavaScript",
+            "d": "MySQL"
+        },
+        "explanation": "MySQL is a database management system and not a programming language. While HTML, CSS, and JavaScript are all programming languages. Additionally, a database system such as MySQL cannot be a programming language, therefore the correct answer 'd' is not a programming language.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a type of conditional statement?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "If statement",
+            "b": "For loop",
+            "c": "While loop",
+            "d": "Switch statement"
+        },
+        "explanation": "The correct answer is a) If statement because it is a type of conditional statement. Conditional statements allow you to execute different blocks of code based on specific conditions. An If statement is a type of conditional statement that checks a condition before executing the code inside the If block. This means that the code inside the If block will only be executed if the condition is true.  Unlike a While loop, which iterates through a block of code until a condition is met, an If statement only executes the code inside the If block if the condition is true. Therefore, option a) If statement is the correct answer.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "Which of the following is a type of web development framework?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Django",
+            "b": "React",
+            "c": "Angular",
+            "d": "All of the above"
+        },
+        "explanation": "The correct answer is 'd) All of the above'. Django, React, and Angular are all types of web development frameworks. Django is a Python-based framework for building web applications. React is a JavaScript library for building user interfaces. Angular is a JavaScript framework for building single-page web applications. All three are types of web development frameworks, so the correct answer is 'd) All of the above'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is not a data structure?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Stack",
+            "b": "Queue",
+            "c": "Function",
+            "d": "Linked list"
+        },
+        "explanation": "'c) Function' is not a data structure. It is a collection of instructions to perform a specific task. Data structures, on the other hand, are organizations of data in a way that allows efficient access and manipulation. Stacks, queues, and linked lists are all data structures. A function, while it might be implemented using data structures, is not a data structure itself.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "Which programming paradigm emphasizes on writing code as a series of mathematical functions?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Procedural programming",
+            "b": "Object-oriented programming",
+            "c": "Functional programming",
+            "d": "Structured programming"
+        },
+        "explanation": "Functional programming paradigm emphasizes writing code as a series of mathematical functions, focusing on pure functions that produce output based on input without side effects or changes to external state. In contrast, procedural programming focuses on procedure-calling paradigm, object-oriented Programming focuses on objects and their interactions, and structured programming focuses on program structure and control flow. Therefore, the correct answer is c) Functional programming.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is not a commonly used programming language for web development?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Java",
+            "b": "Ruby",
+            "c": "Python",
+            "d": "Swift"
+        },
+        "explanation": "The correct answer is 'd) Swift' because Swift is a programming language primarily used for iOS and macOS app development, and not commonly used for web development. The other options, Java, Ruby, and Python, are all commonly used programming languages for web development.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is used for creating and managing virtual environments in Python?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "pip",
+            "b": "venv",
+            "c": "virtualenv",
+            "d": "conda"
+        },
+        "explanation": "Referencing a virtual environment made using the 'python -m venv' command, the 'venv' module is used to manage and create virtual environments in Python, unlike the other proposed options a) pip, c) virtualenv, and d) conda, which are package managers for Python. The 'venv' module is a tool for creating and managing virtual environments in Python and is identified by the basket icon. You can use the venv module to create a fresh environment.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is not a commonly used web development framework in JavaScript?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "React",
+            "b": "Angular",
+            "c": "Vue.js",
+            "d": "Django"
+        },
+        "explanation": "The correct answer is 'd) Django' because Django is a Python-based web development framework, not a JavaScript-based web development framework. The other options, React, Angular, and Vue.js, are all commonly used web development frameworks in JavaScript.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is not a commonly used programming language for artificial intelligence (AI) and machine learning (ML)?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Python",
+            "b": "R",
+            "c": "C++",
+            "d": "Java"
+        },
+        "explanation": "Java is a high-level programming language used for a wide range of applications, including web development and mobile app development, but it is not commonly used for AI and ML tasks. Python is the most popular language for AI and ML tasks due to its simplicity, simplicity, and vast number of libraries and frameworks available for these tasks. Therefore, option d) Java is not a commonly used programming language for AI and ML.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a type of loop in programming?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "For loop",
+            "b": "While loop",
+            "c": "Do-while loop",
+            "d": "All of the above"
+        },
+        "explanation": "'All of the above' is the correct answer because all the options a), b), and c) are types of loops in programming. A for loop iterates over a set of values, a while loop continues until a condition is met, and a do-while loop executes a block of code at least once. All three are types of loops in programming.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "Which of the following is a commonly used markup language for web development?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "HTML",
+            "b": "XML",
+            "c": "JSON",
+            "d": "YAML"
+        },
+        "explanation": "HTML (Hypertext Markup Language) is the most commonly used markup language for web development because it is well-suited for structuring and styling the content of web pages. Its main purpose is to provide a way to arrange text, images, and other multimedia content on a web page to make it easily viewable and navigable by web browsers. It is a standardized language that has been around since the early days of the web and is still widely used today.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used version control system?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Git",
+            "b": "SVN",
+            "c": "Mercurial",
+            "d": "All of the above"
+        },
+        "explanation": "All of the above are commonly used version control systems. Git and SVN (Subversion) are two popular version control systems, while Mercurial is also widely used. Therefore, the correct answer is 'd) All of the above. '",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used integrated development environment (IDE) for Python?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Visual Studio Code",
+            "b": "PyCharm",
+            "c": "Eclipse",
+            "d": "Sublime Text"
+        },
+        "explanation": "The correct answer is PyCharm. PyCharm is a popular Integrated Development Environment (IDE) designed specifically for Python development. It offers a wide range of features such as syntax highlighting, code completion, debugging, and testing tools, making it an ideal choice for Python developers. Visual Studio Code, Eclipse, and Sublime Text are not specifically designed for Python development, and therefore are not the correct answer choices.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used web application framework for Ruby?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Django",
+            "b": "Flask",
+            "c": "Ruby on Rails",
+            "d": "Express.js"
+        },
+        "explanation": "Ruby on Rails is a commonly used web application framework for Ruby.  It is an object-relational mapping (ORM) that provides a database management system.  It allows developers to build web applications quickly and efficiently.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used object-oriented programming language?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "C",
+            "b": "Python",
+            "c": "Perl",
+            "d": "Shell"
+        },
+        "explanation": "Python is a widely used object-oriented programming language because it is a simple-to-learn and easy-to-use language, which makes it an ideal language for beginners and experienced programmers alike. Additionally, Python is a versatile language that can be used for web development, data analysis, machine learning, automation, and more. Its syntax is easy to read and write, making it a great language to learn and work with.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used programming language for game development?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Java",
+            "b": "Python",
+            "c": "C#",
+            "d": "Ruby"
+        },
+        "explanation": "C# is widely used in game development due to its ability to manipulate the game's state, easily handle complex equations, and its speed in resolving the queries. It also provides a range of features for multi-threading, providing smooth and high-performance gameplay.  Additionally, Microsoft created the XNA game development framework, which is written in C#, thereby making it a commonly used language for game development.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used programming language for mobile app development?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Java",
+            "b": "Swift",
+            "c": "Kotlin",
+            "d": "All of the above"
+        },
+        "explanation": "The correct answer is (d) All of the above because mobile app development often involves the use of multiple programming languages. For example, an app may use Java or Kotlin for the backend server-side logic and Swift or Kotlin for the frontend client-side logic. Therefore, all of the above choices are correct.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used web development framework for PHP?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Laravel",
+            "b": "Flask",
+            "c": "Ruby on Rails",
+            "d": "Express.js"
+        },
+        "explanation": "Laravel is a commonly used web development framework for PHP, it provides a complete set of tools for building web applications, including routing, middleware, command-line interfaces, and support for multiple databases. Laravel's elegant elegance and simplicity make it a popular choice among developers.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used scripting language for web development?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Java",
+            "b": "Ruby",
+            "c": "Python",
+            "d": "JavaScript"
+        },
+        "explanation": "JavaScript is a commonly used scripting language for web development, commonly used for client-side scripting, allowing for dynamic and interactive elements on websites. It is also used for server-side scripting with technologies such as Node.js. Therefore, option d) JavaScript is the correct answer.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used web development framework for JavaScript?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Django",
+            "b": "Flask",
+            "c": "Ruby on Rails",
+            "d": "React"
+        },
+        "explanation": "The correct answer is 'd) React'. React is a JavaScript library for building user interfaces and is commonly used for web development, but it is not a full-fledged framework like Django, Flask or Ruby on Rails.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used web development framework for Java?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Django",
+            "b": "Flask",
+            "c": "Ruby on Rails",
+            "d": "Spring"
+        },
+        "explanation": "The correct answer is 'd) Spring' because Spring is a widely used web development framework for Java. The other options, such as Django and Flask, are not specific to Java and are not commonly used for web development in the Java ecosystem. Therefore, option d) Spring is the correct answer.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used web development framework for Ruby?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Django",
+            "b": "Flask",
+            "c": "Ruby on Rails",
+            "d": "Express.js"
+        },
+        "explanation": "Ruby on Rails is a commonly used web development framework for Ruby. It is an object-relational mapping (ORM) that provides a database management system. It allows developers to build web applications quickly and efficiently.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used programming language for scientific computing?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Java",
+            "b": "Python",
+            "c": "Ruby",
+            "d": "C#"
+        },
+        "explanation": "Python is a commonly used programming language for scientific computing due to its easy-to-learn syntax, vast number of libraries for data manipulation and analysis, and its focus on readability. Its popularity stems from the fact that it is a versatile language with a wide range of applications, including but not limited to web development, scientific computing, machine learning, and data analysis. Because of its simplicity and readability, Python has become the go-to language for data analysts and scientists.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used programming language for data analysis?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Java",
+            "b": "Python",
+            "c": "Ruby",
+            "d": "C++"
+        },
+        "explanation": "Python is a commonly used programming language for data analysis due to its easy-to-learn syntax, vast number of libraries for data manipulation and analysis, and its focus on readability. Its popularity stems from the fact that it is a versatile language with a wide range of applications, including but not limited to web development, scientific computing, machine learning, and data analysis. Because of its simplicity and readability, Python has become the go-to language for data analysts and scientists.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used web development framework for Python?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Django",
+            "b": "Flask",
+            "c": "Ruby on Rails",
+            "d": "Express.js"
+        },
+        "explanation": "Django is a commonly used web development framework for Python. It provides an high-level framework for building web applications that allows developers to focus on writing the logic of the app rather than the infrastructure. Django provides many built-in features such as an ORM, a template engine, and the ability to handle and validatin form data, making it a popular choice for web development projects.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is a commonly used programming language for server-side web development?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "JavaScript",
+            "b": "Ruby",
+            "c": "PHP",
+            "d": "All of the above"
+        },
+        "explanation": "PHP, Ruby, Python, and Node.js are all commonly used programming languages for server-side web development, unlike JavaScript which is primarily used for client-side web development",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What is the purpose of a loop in programming?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "To execute a set of instructions a specified number of times",
+            "b": "To terminate the program",
+            "c": "To print output to the console",
+            "d": "To declare variables"
+        },
+        "explanation": "Looping allows programmers to execute a set block of code repeatedly for a specified number times, until a certain condition is met. It is commonly used for tasks such as iterating through a list or array, performing a series of operations for each item. In other words, Loops enable efficient and organized implementation of repetitive tasks in programming.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "While loop tests the condition at the End of the Loop?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "True",
+            "b": "False"
+        },
+        "explanation": "The correct answer is False because the while loop tests the condition at the beginning of the loop. If the condition is true, the loop body is executed. If the condition is false, the loop body is skipped and the program continues with the statement following the loop. Therefore, the correct answer is False.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "What type of errors are checked during compilation?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Logical errors",
+            "b": "Divide by zero error",
+            "c": "Runtime errors",
+            "d": "Syntax errors"
+        },
+        "explanation": "During compilation, the compiler checks for syntax errors in the code. Syntax errors occur when the code does not follow the rules and structure of the programming language. These errors can include missing semicolons, incorrect variable declarations, or using incorrect syntax for loops or conditionals. The compiler identifies these errors and provides error messages to the programmer, indicating the specific line or section of code that needs to be corrected.",
+        "topic": "Fundations"
+    },
+    {
+        "question": "The purpose of main function is _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "To stop program execution",
+            "b": "To stop algorithm",
+            "c": "To start algorithm",
+            "d": "To start program execution"
+        },
+        "explanation": "The main function is the entry point of a program. It is where the program starts its execution. Therefore, the purpose of the main function is to start program execution.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What is output of the following program? main() {int a; float b; a=1/2; b=1.0/2.0; printf(' a=%d b=%f',a,b); }",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "a=0 b=0.5",
+            "b": "a=0 b=0.5",
+            "c": "a=0.0 b=5",
+            "d": "a=0.5 b=0.5"
+        },
+        "explanation": "The output of the program will be 'a=0 b=0.5'. This is because in the line 'a=1/2', the division is performed using integer division, which truncates the decimal part and assigns the result to the integer variable a. As a result, a is assigned the value 0. On the other hand, in the line 'b=1.0/2.0', the division is performed using floating-point division, which retains the decimal part. Therefore, b is assigned the value 0.5.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What are the smallest individual units in a program?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Structures",
+            "b": "Functions",
+            "c": "Record",
+            "d": "Tokens"
+        },
+        "explanation": "Tokens are the smallest individual units in a program. They represent the basic building blocks of a program and include keywords, operators, identifiers, constants, and punctuation symbols. Each token has a specific meaning and is used to construct statements and expressions in a program. Tokens are important for the compiler or interpreter to understand the program's structure and syntax.",
+        "topic": "Describing a Programming Language"
+    },
+    {
+        "question": "Consider the above code and find the output. main ( ) { int m,y; m = 5; y = ++m; printf('%d %d',m,y);}",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "5,5",
+            "b": "5,6",
+            "c": "6,6",
+            "d": "6,5"
+        },
+        "explanation": "In the given code, the variable 'm' is initialized with the value 5. Then, the value of 'm' is incremented by 1 using the pre-increment operator (++m). This means that the value of 'm' becomes 6. The value of 'm' is then assigned to the variable 'y'. So, the value of 'y' also becomes 6. Finally, the printf statement prints the values of 'm' and 'y', which are both 6. Hence, the output of the code is '6,6'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Int C; C=25/2; What is the value of C?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "0.5",
+            "b": "12.500000",
+            "c": "12.000000",
+            "d": "12"
+        },
+        "explanation": "The value of C is 12 because when dividing two integers, the result is an integer. In this case, 25 divided by 2 equals 12 with a remainder of 1. Since the result must be an integer, the remainder is ignored and the value of C is 12.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "The _ loop executes at least once.",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Do while",
+            "b": "While"
+        },
+        "explanation": "The do while loop executes at least once because it first executes the code block and then checks the condition. This means that even if the condition is initially false, the code block will still be executed once before the condition is checked.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "An _ is a collection of variables having same data type.",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Array",
+            "b": "Operator",
+            "c": "Function"
+        },
+        "explanation": "An array is a collection of variables having the same data type. This means that all the elements in an array are of the same type, such as integers, characters, or floating-point numbers. Arrays allow for efficient storage and access of multiple values of the same data type, as they provide a way to store and retrieve elements using an index. By using arrays, we can group related data together and perform operations on the entire collection of elements simultaneously.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "What will be the output of the following program? #include int main() { int a = 1, b = 2, c = 3; printf('The value of a is %d', a); a+=3; printf(' The value of a is %d', a); return 0; }",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "The value of a is 2 The value of a is 2",
+            "b": "The value of a is 1 The value of a is 3",
+            "c": "The value of a is 1 The value of a is 4",
+            "d": "Compiler error"
+        },
+        "explanation": "The output of the program will be 'The value of a is 1 The value of a is 4'. This is because initially the value of 'a' is 1, which is printed. Then, 'a' is incremented by 3 using the compound assignment operator '+='. Therefore, the new value of 'a' is 4, which is printed in the second printf statement.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What is value of C in the following program? {a=10; b=12; c=a+b*2;}",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "44",
+            "b": "22",
+            "c": "34",
+            "d": "Compiler Error"
+        },
+        "explanation": "The given program calculates the value of the variable 'c' using the following formula: c = a + b * 2. 'a' is assigned the value 10, and 'b' is assigned the value 12. Now, let's calculate the value of c: c = 10 + 12 * 2 c = 10 + 24 c = 34 So, the value of C is 34.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What will be the output of the following program? #include<stdio.h> int main() { int arr[3]= {1, 2, 3, 4}; printf('%d\n',arr[3] ); }",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "3",
+            "b": "Compiler Error",
+            "c": "Runtime Error",
+            "d": "4"
+        },
+        "explanation": "The program declares an integer array `arr` with a size of 3. However, when initializing the array, it provides four elements instead of three. This will result in a compilation error because the size of the array is exceeded. Therefore, the correct answer is 'Compiler Error'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What will be the output of the following program? int main() { int i=1; do{ printf('%d ',i); i++; if(i > 5) break; } while(TRUE); return 0; }",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "1 2 3 4 5",
+            "b": "It prints an infinite loop of numbers",
+            "c": "1 2 3 4",
+            "d": "1"
+        },
+        "explanation": "The program starts by initializing the variable i to 1. It then enters a do-while loop, which means that the code inside the loop will always execute at least once. Inside the loop, the value of i is printed using the printf function. Then, i is incremented by 1. If the value of i is greater than 5, the loop is terminated using the break statement. Since i is incremented after each iteration, the loop will eventually terminate when i becomes 6. Therefore, the output of the program will be 1 2 3 4 5.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "How many times will the following loop execute? int main() { int x; for(x=-1; x<=10; x++) { if(x < 5) continue; else break; printf('IndiaBIX'); } return 0; }",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Infinite times",
+            "b": "0 times",
+            "c": "10 times",
+            "d": "11 times"
+        },
+        "explanation": "In this code, the variable x is initially set to -1. The for loop runs as long as x is less than or equal to 10. Inside the loop, the if condition checks if x is less than 5. If it is, the continue statement is executed, which skips the rest of the code inside the loop and goes to the next iteration. If x is not less than 5, the else statement is executed, which includes the break statement. The break statement terminates the loop and exits it completely. Therefore, the code inside the loop that prints 'IndiaBIX' is never executed. Since the loop runs 11 times (from -1 to 10), the answer is 11 times.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "What is the output of the following program? main( ) {int x; x= 14 % 8; printf('%d',x); }",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "6",
+            "b": "4",
+            "c": "1",
+            "d": "1.75"
+        },
+        "explanation": "The program calculates the remainder of 14 divided by 8 using the modulus operator (%). The remainder is 6. The program then uses the printf function to print the value of x, which is 6. Therefore, the output of the program is 6.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What is the output of the following program? int main() { int i=-3, j=2, k=0, m; m=i++; printf('%d, %d, %d, %d\n', i, j, k, m); return 0; }",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "1, 2, 0, 1",
+            "b": "-3, 2, 0, 1",
+            "c": "2, 3, 1, 1",
+            "d": "-3, 2, 0, -1"
+        },
+        "explanation": "The correct answer is -3, 2, 0, -1. In the given code, the value of i is initially -3. The statement 'm=i++;' assigns the current value of i to m and then increments the value of i by 1. Therefore, m is assigned the value -3 and i becomes -2. The printf statement then prints the values of i, j, k, and m, which are -2, 2, 0, and -3 respectively.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What is the output of the following program? main( ) {int x=15,y=6; if(x <15) printf('%d',y); }",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "2",
+            "b": "4",
+            "c": "6",
+            "d": "1"
+        },
+        "explanation": "The program starts by declaring two variables, x and y, with values 15 and 6 respectively. The if statement checks if x is less than 15, which is not true in this case. Therefore, the code inside the if statement is not executed. Since there are no other statements after the if statement, the program does not produce any output. Therefore, the correct answer is 6.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What is the output of the following program? main( ) { float a=5; float b=10,c; c=b%a; printf('%f',c);    }",
+        "answers": [
+            "c",
+            "d"
+        ],
+        "options": {
+            "a": "Gives an error",
+            "b": "2.0",
+            "c": "0.00",
+            "d": "0.000000"
+        },
+        "explanation": "The output of the code is 0.00 and 0.000000 because the modulus operator (%) is used to calculate the remainder when dividing two numbers. In this case, b (10) is divided by a (5), which gives a remainder of 0. Since both a and b are floating-point numbers, the result is also a floating-point number. The output is displayed as '0.00' and '0.000000' because the printf statement is used to format and display the result.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What is the value of x in the following code? int x=1,y=5; x=++x + -y;",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "8",
+            "b": "-3",
+            "c": "5",
+            "d": "-7"
+        },
+        "explanation": "In the given code: x is initially set to 1. y is initially set to 5. Now, let's break down the expression step by step: ++x is a pre-increment operation, which means x is incremented by 1 before its value is used. So, ++x becomes 2. -y is a negation of y, so -y becomes -5. Now, we add 2 (from ++x) to -5 (from -y): x = 2 + (-5), x = 2 - 5, x = -3. So, the value of x is -3.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "What is a syntax error?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "An error you will never find",
+            "b": "An error you find at the end when the program gives out a wrong value due to logic error",
+            "c": "An error caused by language rules being broken",
+            "d": "An error due to user error"
+        },
+        "explanation": "A Syntax Error is an error caused by language rules being broken. Syntax refers to the rules and structure of a programming language. When these rules are violated, the program cannot be executed properly, resulting in a syntax error. It can occur due to various reasons such as misspelled keywords, missing semicolons, incorrect indentation, or using incorrect syntax for a specific programming construct.",
+        "topic": "Fundations"
+    },
+    {
+        "question": "The high level language program before ready to be executed must go through various process except _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Linking",
+            "b": "Loading",
+            "c": "Controlling",
+            "d": "Translation"
+        },
+        "explanation": "The high level language program before ready to be executed must go through various process except translation. This is correct because translation refers to the process of converting high level language into low level language, which is not a necessary step before the program can be executed. The other options correct processing steps include: linking, loading, and controlling.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which one of the following language reflects the way people think mathematically?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Functional",
+            "b": "Event driven programming language",
+            "c": "Cross platform programming language",
+            "d": "All of the above"
+        },
+        "explanation": "Functional programming language emphasizes the use of pure functions, immutability, and common data structures. It is the best option to reflect mathematical way of thinking.",
+        "topic": "Functional Programming"
+    },
+    {
+        "question": "Which language can be directly understood by the CPU?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Assembly language",
+            "b": "Java",
+            "c": "C",
+            "d": "All of the above"
+        },
+        "explanation": "Assembly language uses symbolic representations of machine language instructions that can be directly understood by the CPU. Unlike high-level programming languages like Java and C, which need to be compiled or interpreted before they can be executed by the CPU. So option 'a' is the correct answer.",
+        "topic": "Abstract Machines"
+    },
+    {
+        "question": "What type of languages can easily interact with the hardware?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Very high level languages",
+            "b": "Middle level languages",
+            "c": "High level languages",
+            "d": "Low level languages"
+        },
+        "explanation": "The correct answer is d) Low level languages. Low level languages, such as assembly languages and machine languages, are designed to directly interact with the computer's hardware. They are closer to the machine language that the computer's processor understands, making them more efficient for tasks that require direct hardware manipulation, such as operating systems, device drivers, and embedded systems.",
+        "topic": "Abstract Machines"
+    },
+    {
+        "question": "Which one of the following statements is FALSE?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Context-free grammar can be used to specify both lexical and syntax rules",
+            "b": "Type checking is done before parsing",
+            "c": "High-level language programs can be translated to different Intermediate Representations",
+            "d": "Arguments to a function can be passed using the program stack"
+        },
+        "explanation": "Type checking is done at semantic analysis phase and parsing is done at syntax analysis phase. And we know Syntax analysis phase comes before semantic analysis. So Option (B) is False.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "The output of a lexical analyzer is _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "A parse tree",
+            "b": "Intermediate code",
+            "c": "Machine code",
+            "d": "A stream of tokens"
+        },
+        "explanation": "Lexical analysis produces a stream of tokens as output, which consists of identifier, keywords, separator, operator, and literals.",
+        "topic": "Describing a Programming Language"
+    },
+    {
+        "question": "Consider the following statements related to compiler construction : I. Lexical Analysis is specified by context-free grammars and implemented by pushdown automata. II. Syntax Analysis is specified by regular expressions and implemented by finite-state machine. Which of the above statement",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "is/are correct?",
+            "b": "Only I",
+            "c": "Only II",
+            "d": "Both I and II",
+            "e": "Neither I nor II"
+        },
+        "explanation": "Both statements are wrong for detailed information on lexical analysis and syntax analysis therefore option (D) is correct.",
+        "topic": "Describing a Programming Language"
+    },
+    {
+        "question": "Which of the following statement regarding a linker software is/are true? I A function of a linker is to combine several object modules into a single load module. II A function of a linker is to replace absolute references in an object module by symbolic references to locations in other modules.", 
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Neither I nor II",
+            "b": "Only I",
+            "c": "Only II",
+            "d": "Both I and II"
+        },
+        "explanation": "A linker is a computer program that takes one or more object files generated by a compiler or an assembler and combines them into a single executable program. A linker performs the following tasks: It combines several object modules into a single load module. It replaces absolute references in an object module by symbolic references to locations in other modules. So, option (D) is correct.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Debugger is a program that _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "allows to examine and modify the contents of registers",
+            "b": "does not allow execution of a segment of program",
+            "c": "allows to set breakpoints, execute a segment of program and display contents of register",
+            "d": "All of the above"
+        },
+        "explanation": "A debugger is a computer program used by programmers to test and debug a target program. Debuggers may use instruction-set simulators, rather than running a program directly on the processor to achieve a higher level of control over its execution. It also allows to set breakpoints, execute a segment of program and display contents of register. So, option (C) is correct.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Consider the following two statements: P: Every regular grammar is LL(1). Q: Every regular set has a LR(1) grammar. Which of the following is TRUE?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Both P and Q are true",
+            "b": "P is true and Q is false",
+            "c": "P is false and Q is true",
+            "d": "Both P and Q are false"
+        },
+        "explanation": "A regular grammar can also be ambiguous also For example, consider the following grammar, S -> aA/a A -> aA/-> In above grammar, string 'a' has two leftmost derivations. (1) S -> aA (2) S -> a S->a (using A->->) And LL(1) parses only unambiguous grammar, so statement P is False. Statement Q is true is for every regular set, we can have a regular grammar which is unambiguous so it can be parse by LR parser. So option C is correct choice",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "A canonical set of items is given below: S --> L. > R. Q --> R. On input symbol < the set has _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "a shift-reduce conflict and a reduce-reduce conflict",
+            "b": "a shift-reduce conflict but not a reduce-reduce conflict",
+            "c": "a reduce-reduce conflict but not a shift-reduce conflict",
+            "d": "neither a shift-reduce nor a reduce-reduce conflict"
+        },
+        "explanation": "The question is asked with respect to the symbol  ' < '  which is not present in the given canonical set of items. Hence it is neither a shift-reduce conflict nor a reduce-reduce conflict on symbol '<'. Hence D is the correct option. But if the question would have asked with respect to the symbol  ' > '  then it would have been a shift-reduce conflict.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "The grammar A -> AA | (A) | eps is not suitable for predictive-parsing because the grammar is _.",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "ambiguous",
+            "b": "left-recursive",
+            "c": "right-recursive",
+            "d": "an operator-grammar"
+        },
+        "explanation": "Since given grammar can have infinite parse trees for string '->', so grammar is ambiguous, and also A -> AA has left recursion. For predictive-parsing, grammar should be: Free from ambiguity Free from left recursion Free from left factoring Given grammar contains both ambiguity and left factoring, so it can not have predictive parser. We always expect first grammar free from ambiguity for parsing. Option (A) is more strong option than option (B) here.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following suffices to convert an arbitrary CFG to an LL(1) grammar?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Removing left recursion alone",
+            "b": "Factoring the grammar alone",
+            "c": "Removing left recursion and factoring the grammar",
+            "d": "None of these"
+        },
+        "explanation": "Removing left recursion and factoring the grammar do not suffice to convert an arbitrary CFG to LL(1) grammar.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following statements is false?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "An unambiguous grammar has same leftmost and rightmost derivation",
+            "b": "An LL(1) parser is a top-down parser",
+            "c": "LALR is more powerful than SLR",
+            "d": "An ambiguous grammar can never be LR for any k"
+        },
+        "explanation": "An unambiguous grammar can have different leftmost and rightmost derivation. For example, consider the following grammar, S -> aAa | bAb | bBa | aBb A -> a B -> b Here, string 'abab' has two leftmost derivations. (1) S -> bAb -> abAb -> abab (2) S -> bAb -> bAaB -> abab So, option (A) is false. Option (B) is true. Option (C) is true. Option (D) is true. So, option (A) is false.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Given the language L = {ab, aa, baa}, which of the following strings are in L*?",
+        "answers": [
+            "a",
+            "b",
+            "d"
+        ],
+        "options": {
+            "a": "abaabaaabaa",
+            "b": "aaaabaaaa",
+            "c": "baaaaabaaaab",
+            "d": "baaaaabaa"
+        },
+        "explanation": "L* is the set of all strings that can be formed by concatenating zero or more strings from L. So, abaabaaabaa, aaaabaaaa, and baaaaabaa are in L*.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which one of the following is FALSE?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "There is unique minimal DFA for every regular language",
+            "b": "Every NFA can be converted to an equivalent PDA",
+            "c": "Complement of every context-free language is recursive",
+            "d": "Every nondeterministic PDA can be converted to an equivalent deterministic PDA"
+        },
+        "explanation": "Power of Deterministic PDA is not same as the power of Non-deterministic PDA. Deterministic PDA cannot handle languages or grammars with ambiguity, but NDPDA can handle languages with ambiguity and any context-free grammar. So every non-deterministic PDA can not be converted to an equivalent deterministic PDA.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following statements is false?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Every NFA can be converted to an equivalent DFA",
+            "b": "Every non-deterministic Turing machine can be converted to an equivalent deterministic Turing machine",
+            "c": "Every subset of a recursively enumerable set is recursive",
+            "d": "Every finite subset of a recursively enumerable set is recursive"
+        },
+        "explanation": "A language is recursively enumerable if there exists a Turing machine that accepts every string of the language, and does not accept strings that are not in the language. Strings that are not in the language may be rejected or may cause the Turing machine to go into an infinite loop. A recursive language can't go into an infinite loop, it has to clearly reject the string, but a recursively enumerable language can go into an infinite loop. So, every recursive language is also recursively enumerable. Thus, the statement 'Every subset of a recursively enumerable set is recursive' is false.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is TRUE?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Every subset of a regular set is regular",
+            "b": "Every finite subset of a non-regular set is regular",
+            "c": "The union of two non-regular sets is not regular",
+            "d": "Infinite union of finite sets is regular"
+        },
+        "explanation": "Every finite subset of a non-regular set is regular. For example, consider the following non-regular language, L = {anbn | n >=2265 0} The language L is non-regular because it is not possible to construct a DFA for it. However, the following finite subsets of L are regular: L1 = {a}, L2 = {aa}, L3 = {aaa}, and so on. So, option (B) is true.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following pairs have DIFFERENT expressive power?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Deterministic finite automata(DFA) and Non-deterministic finite automata(NFA)",
+            "b": "Deterministic push down automata(DPDA)and Non-deterministic push down automata(NPDA)",
+            "c": "Deterministic single-tape Turing machine and Non-deterministic single-tape Turing machine",
+            "d": "Single-tape Turing machine and multi-tape Turing machine"
+        },
+        "explanation": "NDPDA can handle languages or grammars with ambiguity, but DPDA cannot handle languages with ambiguity and any context-free grammar.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is true?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "The complement of a recursive language is recursive",
+            "b": "The complement of a recursively enumerable language is recursively enumerable",
+            "c": "The complement of a recursive language is either recursive or recursively enumerable",
+            "d": "The complement of a context-free language is context-free"
+        },
+        "explanation": "The correct answer is a) The complement of a recursive language is recursive. The complement of a language is the set of strings that are not in the language. In the case of a recursive language, the complement is also recursive, meaning that it can be recognized by a recursive algorithm. This is because a recursive language is one in which the definition of a string involves references to previous strings, and the complement of such a language is also a set of strings that involve references to previous strings. Therefore the complement of a recursive language is recursive.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "The set of all recursively enumerable languages is _.",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "closed under complementation",
+            "b": "closed under intersection",
+            "c": "a subset of the set of all recursive languages",
+            "d": "an uncountable set"
+        },
+        "explanation": "Recursive Enumerable Language are closed under Union, Intersection, Concatenation and Kleene Closure (but not Complementation). So, we can easily rule out option (A) and option (B) comes to be TRUE. Recursive Language are subset of REL, but option (C) is saying opposite, so Option (C) is FALSE. REL are countable, since set of all Turing Machines are countable. So option (D) is also FALSE. Only Option (B) is correct.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following is FALSE with respect to possible outcomes of executing a Turing Machine over a given input?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "it may halt and accept the input",
+            "b": "it may halt by changing the input",
+            "c": "it may halt and reject the input",
+            "d": "it may never halt"
+        },
+        "explanation": "Halting of Turing machine is an undecidable problem. Since we can not know the outcome of a turing machine on any input, there can be several possibilities: i) It may halt and accept the input. ii) It may halt and reject the input. iii) It may never halt. So, Option (B) is correct as a turing machine can never halt changing the input.",
+        "topic": "Fundations"
+    },
+    {
+        "question": "Select one of the following true statement for the compiler.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "the input of the compiler is source program",
+            "b": "it translates the source code into object code as a whole",
+            "c": "the output of the compiler is object code",
+            "d": "all of above"
+        },
+        "explanation": "d) all of above - The compiler takes the source code as input, translates it into machine code as a whole, and produces the object code as output. Therefore, all the above options are true statements about the compiler.",
+        "topic": "Abstract Machines"
+    },
+    {
+        "question": "In object oriented programming, the objects can contain ______ ?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "data",
+            "b": "code",
+            "c": "variables",
+            "d": "all of these"
+        },
+        "explanation": "In object-oriented programming (OOP), objects can contain data and methods, which define the object's behavior and operations that can be performed on that data. Objects can also have variables and other data members that are used to store information about the state of the object. Therefore, options a and c are both correct, and the correct answer is 'd) all of these'.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "Which one of the following is a more generalized concept?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Object",
+            "b": "Class",
+            "c": "Attributes",
+            "d": "Functions"
+        },
+        "explanation": "The correct answer is 'b' Class.  Explanation: A class is a more generalized concept than an object, as a class is a blueprint or template for creating objects, while an object is a specific instance of a class. A class defines the properties and behaviors of an object, and multiple objects can be created from a single class. Therefore, option b is the more generalized concept.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which statement is true about objects in object oriented programming?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "procedures are attached to objects but can't access and modify the object's data fields",
+            "b": "procedures are not attached to objects and so can't access and modify the object's data fields",
+            "c": "procedures are attached to objects and can access but can't modify the object's data fields",
+            "d": "procedures are attached to objects and can access and modify the object's data fields"
+        },
+        "explanation": "The correct answer is d) procedures are attached to objects and can access and modify the object's data fields.  In object-oriented programming (OOP), procedures (also called methods) are attached to objects. This means that procedures can access and modify the data fields of an object. The correct answer, option d, states that procedures can access and modify the object's data fields, which is a fundamental aspect of OOP.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "Which of the following statement is correct about classes in object oriented programming?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "classes can share attribute with each other",
+            "b": "classes can't share attribute with each other",
+            "c": "classes represents recursion",
+            "d": "none of these"
+        },
+        "explanation": "Classes in object-oriented programming can have shared attributes, which allows for code reusability and modularity. This means that one class can inherit attributes from another class, making it easier to create a hierarchy of related classes. The correct answer is a) classes can share attributes with each other.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "Which one of the following statement is correct about objects and classes?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "objects are not instances of classes",
+            "b": "objects are instances of classes",
+            "c": "classes are instances of objects",
+            "d": "objects are instances of classes"
+        },
+        "explanation": "The correct answer is 'b) objects are instances of classes'. Objects can be thought of as instances of a class, as objects have properties and methods specifically defined in the class they inherit from. Classes define the blueprint for objects to follow, so objects will always be instances of a class. The other options are incorrect because objects are not instances of other objects (a), classes are not instances of objects (c), and objects are not instances of classes (d).",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "We can access which kind of data members in the derived class?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Private data members",
+            "b": "Protected data members",
+            "c": "Public data members",
+            "d": "B and C"
+        },
+        "explanation": "In the derived class, we can access both protected and public data members. B and C are the correct answer. We cannot access private data members in the derived class, because they are not accessible outside the class where they are defined. Therefore, options A and B are incorrect. Option C is incorrect too because public data members are not accessible in a derived class. Only protected and public members with the same name and parameters can be accessed in a derived class.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "We can access which kind of data members outside the class?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Private data members",
+            "b": "Protected data members",
+            "c": "Public data members",
+            "d": "B and C"
+        },
+        "explanation": "Public data members can be accessed outside the class. Therefore, option C is the correct answer. Private data members are not accessible outside the class where they are defined, so option A is incorrect. Protected data members are accessible in the derived class, but not outside the class, so option B is incorrect. Option D is incorrect because only public data members can be accessed outside the class.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "Which one is the best description of polymorphism?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "It is the ability for undefined message/data to be processed in at least one way",
+            "b": "It is the ability for a message/data to be processed in more than one form",
+            "c": "It is the ability for many messages/data to be processed in many ways",
+            "d": "none of these"
+        },
+        "explanation": "Polymorphism in OOP refers to a situation where an object can take on multiple forms based on the context in which it is used. For instance, a shape can be a rectangle, circle, triangle, or square, depending on the operations performed on it. In this case, the shape can take on multiple forms based on the context of the operations. Therefore, option b is the correct answer.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "The feature that its specification is if same message is passed to objects of several different classes and all of those can respond in a different way then it is called?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Inheritance",
+            "b": "Classes",
+            "c": "Polymorphism",
+            "d": "none of these"
+        },
+        "explanation": "'c) Polymorphism' is the correct answer because polymorphism enables different objects of the same class to respond in different ways to the same message or method call. It allows objects to take on multiple forms, making it a key concept in object-oriented programming. Therefore, polymorphism allows for the difference response to the same message from different objects of different classes, making it the correct answer.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "Which of the following is not true for polymorphism?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "It is a feature of OOP",
+            "b": "Ease in the readability of a program",
+            "c": "Helps in redefining the same functionality",
+            "d": "Increases overhead of function definition always"
+        },
+        "explanation": "Polymorphism is a feature of OOP that allows the same name to be used for different functions based on the context. This feature helps to increase code reusability and reduces code duplicity. However, it does not necessarily increase the overhead of function definition always. Therefore, option d is not true for polymorphism.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "The two or more classes serve as base class for a derived class, then this situation is called _.",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "Polymorphism",
+            "b": "multiple inheritance",
+            "c": "encapsulation",
+            "d": "none of these"
+        },
+        "explanation": "The correct answer is 'b' multiple inheritance because when two or more classes serve as a base class for a derived class, it allows for multiple inheritance relationships to exist. This is a mechanism that allows a class to inherit properties and methods from multiple parents, whereas the other options are conceptually distinct. In conclusion, using the provided answer and the correct answer, it is crucial to understand each concept to comprehend their comparative distinctions.",
+        "topic": "Object-Oriented Paradigm"
+    },
+    {
+        "question": "A grammar for a programming language is a formal description of _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Syntax",
+            "b": "Semantics",
+            "c": "Structure",
+            "d": "Code"
+        },
+        "explanation": "The correct answer is 'c' because a grammar for a programming language is a formal description of the structure of programs written in that language. A grammar specifies the valid strings of symbols that can be used in the language, and how those symbols can be combined to form valid programs. This includes the rules for shaping the syntax of the language, which determine how the symbols are organized and how they interact with each other. Therefore, a grammar is a formal description of the structure of a programming language and its programs.",
+        "topic": "Describing a Programming Language"
+    },
+    {
+        "question": "Which of the following is most general phase structured grammar?",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "Context Sensitive",
+            "b": "Regular",
+            "c": "Context Free",
+            "d": "None of the above"
+        },
+        "explanation": "A context sensitive grammar is the most general phase structured grammar. A grammar is context sensitive if the right-hand side of a production can depend on the context in which the production is used. This means that the grammar can generate all possible grammars, regardless of their structure. Therefore, option a) is the correct answer. ",
+        "topic": "Describing a Programming Language"
+    },
+    {
+        "question": "Context free language can be recognized by _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "finite state automation",
+            "b": "linear bounded automation",
+            "c": "push down automata",
+            "d": "both b and c"
+        },
+        "explanation": "Context free language can be recognized by both linear bounded automation and push down automata. A context-free language is a language that can be generated by a context-free grammar. A context-free grammar is a formal grammar in which every production rule is of the form V -> w, where V is a single nonterminal symbol, and w is a string of terminals and/or nonterminals. Therefore, option d) is the correct answer.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "The term environment in programming language semantics is said as _.",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "function that maps a name to value held there",
+            "b": "function that maps a name to a storage location",
+            "c": "the function that maps a storage location to the value held there",
+            "d": "none of the above"
+        },
+        "explanation": "The term environment in programming language semantics is said as function that maps a name to a storage location. An environment is a function that maps a name to a storage location. This means that the environment maps a name to the value held in that location. Therefore, option b) is the correct answer.",
+        "topic": "Names and the Environment"
+    },
+    {
+        "question": "Any syntactic construct that can be described by a regular expression can also be described by a _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "context sensitive grammar",
+            "b": "non-context free grammar",
+            "c": "context free grammar",
+            "d": "none of these"
+        },
+        "explanation": "Context-free grammars are a fundamental concept in theoretical computer science. They are a type of formal grammar that generates a language, where the string structure is determined by a set of production rules. Since regular expressions are a subset of formal grammars, any syntactic construct that can be described by a regular expression can also be described by a context-free grammar. This is because context-free grammars are capable of generating any language that can be recognized by a pushdown automata. Therefore, option c) is the correct answer.",
+        "topic": "Describing a Programming Language"
+    },
+    {
+        "question": "Use of recursion _.",
+        "answers": [
+            "a",
+            "d"
+        ],
+        "options": {
+            "a": "enhances logical clarity",
+            "b": "makes debugging casier",
+            "c": "reduces execution time",
+            "d": "reduces code size"
+        },
+        "explanation": "Use of recursion _ a) enhances logical clarity. Recursion involves breaking down a problem into smaller sub-problems, which helps to enhance the logical clarity of the code. The correct answer is 'a) enhances logical clarity. This option reflects the fact that recursion can simplify problems, increase code reusability, and reduce the complexity of code.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "A program has 100 instructions and another program (for the same problem) has 200 instructions. Which of the folowing comment logicaly follows?",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "The execution time of the second program si more than that of the first",
+            "b": "The execution time of the second program si same as that of the first",
+            "c": "Compilation time of the second program, si more than that of the first",
+            "d": "None of the above"
+        },
+        "explanation": "There is no relationship between code size and execution time. For example, use of recursion, generally results in compact code, but execution time will be more.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "The conditional expansion facility of macro processors is provided to _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "test a condition during the execution of the expanded program",
+            "b": "expand certain model statements depending upon the value of a condition during the execution of the expanded program",
+            "c": "implement recursion",
+            "d": "expand certain model statements depending upon the value of acondition during hte execution of the macro expansion"
+        },
+        "explanation": "The correct answer is option d. Conditional expansion enables the expansion of certain mdoel statements depending on the value of a condition. The conditinal expansion facility of macro processors allows the macro Expansion processor to expand certain model statements only if a specified condition is true. This conditinal expansion is useful when the user wants to expand only particular parts of a model. Expanding certain model statements depending on the value of a condition is the main purpose of conditinal expansion. It is not used to test a condition during the execution of the expanded program, expand certain model statements depending upon the value of a condition during the execution of the expanded program, or implement recursion. Therefore, option d is the correct answer.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Consider the following pseudo-Pascal function. \n function: fibo (n : integer) : integer; \n begin \n if (n = 0) then fibo := 0 \n else if (n = 1) then fibo:=1 \n else fibo =: fibo(n-1)+fibo(n-2) \n end \n If fibo(5) is the function cal, fibo(1) will be used _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "3 times",
+            "b": "4 times",
+            "c": "5 times",
+            "d": "6 times"
+        },
+        "explanation": "The correct answer is 'c) 5 times' because when we call fibo(5), we need to call fibo three times (for n=1, n=2, and n=3), and then the result is added to fibo(4), which is the value of fibo(n-1) in this case. Therefore, fibo(5) will use fibo(1) five times.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "In which of the following parameter passing mechanisms, the actual argument has to be a variable?",
+        "answers": [
+            "b",
+            "c",
+            "d"
+        ],
+        "options": {
+            "a": "Pass by value",
+            "b": "Pass by result",
+            "c": "Pass by value-result",
+            "d": "Pass by reference"
+        },
+        "explanation": "In pass by result, the actual argument has to be a value, not a variable. A function can only modify its parameters by reference. If you want to pass a variable by value, you can do so by making a copy of the variable, just as pass by value would do. However, changes made to the copy within the function do not affect the original variable, allowing the function to access variables-by-reference in a way that might be less safe and more complex than necessary. Therefore the correct answer is 'b) pass by result, c) pass by value-result, and d) pass by reference'.",
+        "topic": "Names and the Environment"
+    },
+    {
+        "question": "The principle that a function can always be raplaced by its value (irrespective of the context) without changing the meaning is called _.",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "referential transparency",
+            "b": "orthogonality",
+            "c": "context-free",
+            "d": "unbinding"
+        },
+        "explanation": "Orthogonality is the principle that each component of a language should be independent of the other components. Context-free in a broad sense means replacement of one pattern by another, irrespective of the context.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Programming languages offer features ot write functions to _.",
+        "answers": [
+            "a",
+            "b",
+            "c"
+        ],
+        "options": {
+            "a": "facilitate the implementation of top-down logic",
+            "b": "enhance logical clarity",
+            "c": "avoid programming across programs",
+            "d": "none of the above"
+        },
+        "explanation": "The correct answer is 'a) facilitate the implementation of top-down logic, b) enhance logical clarity, and c) avoid programming across programs'. Functions are a fundamental concept in programming languages, and they are used to facilitate the implementation of top-down logic, enhance logical clarity, and avoid programming across programs. Therefore, the correct answer is 'a) facilitate the implementation of top-down logic, b) enhance logical clarity, and c) avoid programming across programs'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following comparisons between static and dynamic type checking si incorrect?",
+        "answers": [
+            "a",
+            "b"
+        ],
+        "options": {
+            "a": "Dynamic type checking slows down execution",
+            "b": "Dynamic type checking offers more flexibility ot the programmers",
+            "c": "Dynamic type checking si more reliable",
+            "d": "Unlike static type checking, dynamic type checking is done during compilation"
+        },
+        "explanation": "The correct answer is 'a) Dynamic type checking slows down execution. Dynamic type checking is typically done at runtime, which can slow down program execution compared to static type checking which is done during compile time. This means that dynamic type checking may not be as efficient as static type checking in terms of performance. Therefore, option a) is the correct answer.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "The period of time between an allocation and its subsequent disposal is called _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "scope",
+            "b": "(dynamic) binding",
+            "c": "lifetime",
+            "d": "longevity"
+        },
+        "explanation": "The correct answer is 'c) lifetime'. Lifetime refers to the period of time between an allocation and its subsequent disposal. An object's lifetime begins when it is created and ends when it goes out of scope or is explicitly destroyed.",
+        "topic": "Names and the Environment"
+    },
+    {
+        "question": "Aliasing is a situation where _.",
+        "answers": [
+            "a",
+            "b"
+        ],
+        "options": {
+            "a": "two commands with different names share the same code",
+            "b": "a particular location is associated with more than one name",
+            "c": "different functions have the same name but require parameters of different types",
+            "d": "none of the above"
+        },
+        "explanation": "Aliasing is a situation where two commands with different names share the same code. In other words, both commands have the same executable code but different names. This results in two distinct commands that are effectively doing the same thing. By using the same code for both commands, developers can save time and reduce duplication of effort by avoiding rewrite the code for each unique set of arguments. The other options are incorrect because option 'c') does not address the concept of aliasing.",
+        "topic": "Names and the Environment"
+    },
+    {
+        "question": "Overloading is _.",
+        "answers": [
+            "a",
+            "c"
+        ],
+        "options": {
+            "a": "functions having the same name but with different types of parameters",
+            "b": "a function used very frequently in a program",
+            "c": "an operator whose meaning is determined by the operand type",
+            "d": "all of the above"
+        },
+        "explanation": "The correct answer is 'a) functions having the same name but with different types of parameters, and c) an operator whose meaning is determined by the operand type'. Overloading is a feature of programming languages that allows multiple functions to have the same name but with different types of parameters. This is useful for creating functions that perform similar tasks but with different types of arguments. Overloading is also used to create operators whose meaning is determined by the operand type. Therefore, the correct answer is 'a) functions having the same name but with different types of parameters, and c) an operator whose meaning is determined by the operand type'.",
+        "topic": "Structuring Data"
+    },
+    {
+        "question": "Which of the following is a dangling reference?",
+        "answers": [
+            "a",
+            "b",
+            "c"
+        ],
+        "options": {
+            "a": "Accesing a storage that is already disposed at the request of the user",
+            "b": "Accessing a storage that is already disposed at the request of the processor",
+            "c": "Accessing a variable that is declared but not initialized",
+            "d": "None of the above"
+        },
+        "explanation": "Accessing a storage that is already disposed at the request of the user is a dangling reference because it attempts to access Memory locations that have already been released or detched, which leads to an illegal Memory reference.",
+        "topic": "Memory Management"
+    },
+    {
+        "question": "Heap allocation is required for languages that _.",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "support recursion",
+            "b": "support dynamic data structures",
+            "c": "use dynamic scope rules",
+            "d": "none of the above"
+        },
+        "explanation": "The correct answer is 'b) support dynamic data structures'. The reason is that heap allocation is necessary for dynamic data structures such as the stack and heap memory, which are important for supporting recursive functions. The stack allocates memory for function call frames, local variables, and other data structures, while the heap manages memory for globals and dynamic objects.",
+        "topic": "Memory Management"
+    },
+    {
+        "question": "Binding (of an identifier to a value) can occur while _.",
+        "answers": [
+            "a",
+            "b",
+            "c",
+            "d"
+        ],
+        "options": {
+            "a": "writing a program",
+            "b": "compiling aprogram",
+            "c": "invoking a sub-program",
+            "d": "executing a program"
+        },
+        "explanation": "The correct answer is 'a) writing a program, b) compiling a program, c) invoking a sub-program, and d) executing a program'. Binding is the process of associating a name with a value, and it can occur at any time during the development of a program. This includes writing a program, compiling a program, invoking a sub-program, and executing a program. Therefore, the correct answer is 'a) writing a program, b) compiling a program, c) invoking a sub-program, and d) executing a program'.",
+        "topic": "Names and the Environment"
+    },
+    {
+        "question": "Consider the following program fragment. procedure exchange(A: integer, B: integer) \n temp: integer; \n begin \n temp : = A; A := B; B := temp \n end; \n begin \n M := 2 X[M] := 4; \n exchange(M, X[M]); write(M, x[2]); \n end \n If the parameters are passed by value, the output will be _.",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "unpredictable",
+            "b": "2, 4",
+            "c": "4, 2",
+            "d": "2, 2"
+        },
+        "explanation": "If the parameters are passed by value, the function will be manipulating a local copy of the argument value. Any change will be local to the function and hence will not be reflected in the calling environment.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Choose the correct statements.",
+        "answers": [
+            "a",
+            "b",
+            "c"
+        ],
+        "options": {
+            "a": "In general, there is always an iterative equivalent of a recursive definition",
+            "b": "Recursion and iteration are equaly powerful",
+            "c": "In iteration(unlike recursion), the body is carried out to completion each time, before the condition for termination si tested",
+            "d": "Recursion is more powerful than iteration"
+        },
+        "explanation": "The correct answer is 'a) In general, there is always an iterative equivalent of a recursive definition, b) Recursion and iteration are equaly powerful, and c) In iteration (unlike recursion), the body is carried out to completion each time, before the condition for termination is tested'. Recursion and iteration are equally powerful because they are both capable of expressing the same set of computations. This means that there is always an iterative equivalent of a recursive definition, and the body is carried out to completion each time before the condition for termination is tested. Therefore, the correct answer is 'a) In general, there is always an iterative equivalent of a recursive definition, b) Recursion and iteration are equaly powerful, and c) In iteration (unlike recursion), the body is carried out to completion each time, before the condition for termination is tested'.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "Binding cannot be done _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "when separately compiled modules are being linked together",
+            "b": "during loading",
+            "c": "while writing a program",
+            "d": "none of the above"
+        },
+        "explanation": "The correct answer is 'd) none of the above'. Binding can be done at any time during the development of a program, including when separately compiled modules are being linked together, during loading, and while writing a program. Therefore, the correct answer is 'd) none of the above'.",
+        "topic": "Names and the Environment"
+    },
+    {
+        "question": "The target of an assignment statement should be _.",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "1-value",
+            "b": "either 1-value or r-value",
+            "c": "r-value",
+            "d": "none of the above"
+        },
+        "explanation": "The correct answer is 'a) 1-value' because an assignment statement assigns one value to one variable. A variable can only hold one value at a time, so the target of an assignment statement must be a 1-value.",
+        "topic": "Control Structure"
+    },
+    {
+        "question": "BNF si a meta-language for _.",
+        "answers": [
+            "a",
+            "b"
+        ],
+        "options": {
+            "a": "specifying the syntax of a language",
+            "b": "specifying a context-free grammar",
+            "c": "describing how a program works",
+            "d": "shel programming"
+        },
+        "explanation": "BNF stands for Backus-Naur Form, which is a formalism for describing the syntax of programming languages. It provides a way of specifying the structure of a language using a set of production rules. BNF is used as a meta-language for specifying the syntax of a language, hence option (a) is the correct answer.",
+        "topic": "Describing a Programming Language"
+    },
+    {
+        "question": "The word 'formal' in formal languages means _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "the symbols used have well-defined meaning",
+            "b": "they are unnecessary, in reality",
+            "c": "only the form of the string of symbols is significant",
+            "d": "none of the above"
+        },
+        "explanation": "The word 'formal' in this context refers to the fact that only the structure or form of the string of symbols is important, rather than their actual meaning. Formal languages are characterized by a set of rules that govern the structure of the strings, rather than the meaning of the symbols themselves. The other options are incorrect because 'a) the symbols used do not necessarily have well-defined meanings, and b) the use of the word 'unnecessary' is not relevant to",
+        "topic": "Describing a Programming Language"
+    },
+    {
+        "question": "The recognizing capability of Non-Deterministic Finite State Machine and Deterministic Finite State Machine _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "may be different",
+            "b": "must be different",
+            "c": "must be the same",
+            "d": "none of the above"
+        },
+        "explanation": "Deterministic Finite State Machine is a special case of NDeterministic Finite State Machine. Corresponding to any given NDeterministic Finite State Machine, one can construct an equivalent Deterministic Finite State Machine. Coresponding to any given Deterministic Finite State Machine, one can construct an equivalent NDeterministic Finite State Machine. So they are equally powerful.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Finite State Machine can recognize _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "any grammar",
+            "b": "only Context Free Grammar",
+            "c": "any unambiguous grammar",
+            "d": "only regular grammar"
+        },
+        "explanation": "A Finite State Machine (FSM) is a type of automa that recognizes any regular language. Since all regular grammars are context-free, the FSM can recognize any context-free grammar. However, not all context-free grammars are unambiguous, hence option (c) is incorrect. Moreover, the FSM can also recognize any regular grammar, therefore option (a) is incorrect.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Pumping lemma is generally used for proving _.",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "a given grammar is regular",
+            "b": "a given grammar is not regular",
+            "c": "whether two given regular expressions are equivalent",
+            "d": "none of the above"
+        },
+        "explanation": "Pumping Lemma is used to prove that a given grammar is not regular. The lemma states that if a grammar generates a language that can be recognized by a pumping function, then the grammar is not regular. Therefore, option (b) is the correct answer. The pumping function is a function that takes a string from the language and repeatedly Applies the production rules of the grammar to obtain a longer string, until it reaches a point where the string cannot be extended further. If the string can be extended further, then the grammar is not regular. Therefore, option (b) is the correct answer.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "The basic limitation of an Finite State Machine is that _.",
+        "answers": [
+            "a"
+        ],
+        "options": {
+            "a": "it can't remember arbitrary large amount of information",
+            "b": "it sometimes recognizes grammars that are not regular",
+            "c": "it sometimes fails to recognize grammars that are regular",
+            "d": "all of the above"
+        },
+        "explanation": "The basic limitation of an Finite State Machine is that it can't remember arbitrary large amount of information. A Finite State Machine has a fixed memory, and it cannot remember an arbitrary amount of information. Therefore, it cannot recognize languages that require an arbitrary amount of memory. This is the basic limitation of a Finite State Machine, and it is the correct answer.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Palindromes can't be recognized by any Finite State Machine because _.",
+        "answers": [
+            "a",
+            "b",
+            "c"
+        ],
+        "options": {
+            "a": "a Finite State Machine can't remember arbitrarily large amount of information",
+            "b": "a Finite State Machine can't deterministicaly fix the mid-point",
+            "c": "even if the mid-point is known, a Finite State Machine can't find whether the second half of the string matches the first half",
+            "d": "none of the above"
+        },
+        "explanation": "Palindromes can't be recognized by any Finite State Machine because a Finite State Machine can't remember arbitrarily large amount of information. A Finite State Machine has a fixed memory, and palindromes have a non-deterministic structure that cannot be fully stored in the memory of a Finite State Machine. Therefore, it cannot recognize palindromes with a finite number of states. ",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "A Finite State Machine can be considered a Turing Machine _.",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "of finite tape length, rewinding capability and unidirectional tape movement",
+            "b": "of finite tape length, without rewinding capability and unidirectional tape movement",
+            "c": "of finite tape length, without rewinding capability and bidirectional tape movement",
+            "d": "of finite tape length, rewinding capability and bidirectional tape movement"
+        },
+        "explanation": "A Finite State Machine can be considered a Turing Machine of finite tape length, without rewinding capability and unidirectional tape movement. This is the correct answer because a Finite State Machine can only read and write a single symbol on the tape at a time, and it cannot move the tape left or right. Additionally, it cannot rewind the tape, which is a key feature of a Turing Machine.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Turing Machine is more powerful than Finite State Machine because _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "the tape movement si confined to one direction",
+            "b": "it has no finite state control",
+            "c": "it has the capability to remember arbitrary long sequences of input symbols",
+            "d": "none of the above"
+        },
+        "explanation": "A turing machine is more powerful than a finite state machine because it has the capability to 'remember' or store information on its tape. Unlike a finite state machine, which only has a finite number of states and transitions, a Turing machine can read and write an arbitrary amount of information on its tape. This allows a Turing machine to recognize and accept a much broader class of languages than a finite state machine. Therefore, option (c) is the correct answer.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Set of regular languages over a given alphaber set, is not closed under _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "union",
+            "b": "complementation",
+            "c": "intersection",
+            "d": "none of the above"
+        },
+        "explanation": "The correct answer is 'd) none of the above'. The set of regular languages over a given alphabet set is closed under union, complementation, and intersection. This means that any regular language can be represented as a union, complement, or intersection of other regular languages. Therefore, the correct answer is 'd) none of the above'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Any given Transition graph has an equivalent _.",
+        "answers": [
+            "a",
+            "b",
+            "c"
+        ],
+        "options": {
+            "a": "regular expression",
+            "b": "Deterministic Finite State Machine",
+            "c": "NDeterministic Finite State Machine",
+            "d": "none of the above"
+        },
+        "explanation": "A Transition Graph is an equivalent of a regular expression when describing the behavior of a system. Both represent a set of states and the transitions between them. In a Transition Graph, the states are represented by nodes, and the transitions are represented by edges between the nodes. In a regular expression, the states are represented by symbols, and the transitions are represented by the rules that govern how those symbols can be combined. Therefore, any given Transition Graph has an equivalent regular expression, Deterministic Finite State Machine, and NDeterministic Finite State Machine.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Let L(G) denote the language generated by the grammar G. To prove set A = L(G) _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "it is enough to prove that an arbitrary member of A can be generated by grammar G",
+            "b": "it is enough ot prove that an arbitrary string generated by G, belongs ot set A",
+            "c": "both the above comments are to be proved",
+            "d": "either of the above comments is to be proved"
+        },
+        "explanation": "The correct answer is 'c) both the above comments are to be proved'. To prove that a set A is equal to the language generated by a grammar G, it is necessary to prove that an arbitrary member of A can be generated by grammar G, and that an arbitrary string generated by G belongs to set A. Therefore, the correct answer is 'c) both the above comments are to be proved'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Choose the correct statements.",
+        "answers": [
+            "b",
+            "c"
+        ],
+        "options": {
+            "a": "All languages can be generated by Context Free Grammar",
+            "b": "Any regular language has an equivalent Context Free Grammar",
+            "c": "Some non-regular languages can't be generated by any Context Free Grammar",
+            "d": "Some regular languages can't be generated by any Context Free Grammar"
+        },
+        "explanation": "A Context Free Grammar (CFG) is a set of production rules that define a language. It specifies which strings belong to the language and how they can be generated. A regular language is a language that can be recognized by a finite automaton (FA). An equivalent CFG for a regular language exists because any regular language can be recognized by an FA, and an FA can be constructed from a CFG. Therefore, option b) is the correct answer. The other options are incorrect because option 'a) all languages can be generated by CFG' is false, and option 'c) some non-regular languages can't be generated by any CFG' is false.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Context Free Grammar is not closed under _.",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "union",
+            "b": "Kleene star",
+            "c": "complementation",
+            "d": "product"
+        },
+        "explanation": "The correct answer is 'c) complementation' because a context-free grammar is not closed under complementation, meaning that the complement of a context-free grammar is not necessarily context-free. A context-free grammar is a set of production rules that generate strings in a language, and the complement of a grammar is the set of strings that are not in the language. Since the complement of a context-free grammar is not necessarily context-free, the grammar is not closed under complement operation. Therefore, option c) is the correct answer.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "The intersection of a Context FreeL and a regular language _.",
+        "answers": [
+            "c",
+            "d"
+        ],
+        "options": {
+            "a": "need not be regular",
+            "b": "need not be context free",
+            "c": "is always regular",
+            "d": "is always Context Free"
+        },
+        "explanation": "The intersection of a context-free language (L) and a regular language (R) results in a regular language (LR). This is because LR is the set of all strings that can be generated by both L and R, and both L and R generate regular languages. Therefore, the intersection of a context-free language and a regular language is always regular.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Choose the correct statements.",
+        "answers": [
+            "a",
+            "c"
+        ],
+        "options": {
+            "a": "The power of Deterministic Finite State Machine and NDeterministic Finite State Machine are the same",
+            "b": "The power of Deterministic Finite State Machine and NDeterministic Finite State Machine are different",
+            "c": "The power of Deterministic Push Down Machine and Non-Deterministic Push Down Machine are different",
+            "d": "The power of Deterministic Push Down Machine and Non-Deterministic Push Down Machine are the same"
+        },
+        "explanation": "The correct answer is 'a) the power of Deterministic Finite State Machine and NDeterministic Finite State Machine are the same, and c) the power of Deterministic Push Down Machine and Non-Deterministic Push Down Machine are different'. The power of a Deterministic Finite State Machine (DFSM) and NDeterministic Finite State Machine (NDFSM) are the same because both can recognize the same set of languages. However, the power of a Deterministic Push Down Machine (DPDM) and Non-Deterministic Push Down Machine (NPDM) are different because a DPDM can recognize a subset of the languages recognized by an NPDM. Therefore, the correct answer is 'a) the power of Deterministic Finite State Machine and NDeterministic Finite State Machine are the same, and c) the power of Deterministic Push Down Machine and Non-Deterministic Push Down Machine are different'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the folowing is accepted by a Non-Deterministic Push Down Machine, but not by a Deterministic Push Down Machine?",
+        "answers": [
+            "b"
+        ],
+        "options": {
+            "a": "All strings in which a given symbol is present at least twice",
+            "b": "Even palindromes (i.e. palindromes made up of even number of terminals)",
+            "c": "Strings ending with a particular terminal",
+            "d": "None of the above"
+        },
+        "explanation": "The correct answer is 'b) even palindromes (i.e. palindromes made up of even number of terminals)'. A Deterministic Push Down Machine (DPDM) can recognize a subset of the languages recognized by a Non-Deterministic Push Down Machine (NPDM). This means that a DPDM can recognize all strings in which a given symbol is present at least twice, and strings ending with a particular terminal. However, a DPDM cannot recognize even palindromes (i.e. palindromes made up of even number of terminals). Therefore, the correct answer is 'b) even palindromes (i.e. palindromes made up of even number of terminals)'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Context Sensitive Grammar can be recognized by a _.",
+        "answers": [
+            "d"
+        ],
+        "options": {
+            "a": "Finite State Machine",
+            "b": "Non-Deterministic Push Down Machine",
+            "c": "Deterministic Push Down Machine",
+            "d": "linearly bounded memory machine"
+        },
+        "explanation": "The correct answer is 'd) linearly bounded memory machine'. A linearly bounded memory machine is a type of Turing machine that has a finite amount of memory. This means that it can only recognize languages that can be generated by a context-sensitive grammar. Therefore, the correct answer is 'd) linearly bounded memory machine'.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Pick the correct answers. Universal Turing Machine influenced the concept of _.",
+        "answers": [
+            "a",
+            "b",
+            "c"
+        ],
+        "options": {
+            "a": "stored-program computers",
+            "b": "interpretive implementation of programming languages",
+            "c": "computability",
+            "d": "none of the above"
+        },
+        "explanation": "The correct answer is 'a) stored-program computers, b) interpretive implementation of programming languages, and c) computability'. The Universal Turing Machine (UTM) is a theoretical machine that can simulate any Turing machine. It influenced the concept of stored-program computers because it was the first machine to use a stored program. It also influenced the concept of interpretive implementation of programming languages because it was the first machine to use an interpreter. Finally, it influenced the concept of computability because it was the first machine to be able to simulate any Turing machine. Therefore, the correct answer is 'a) stored-program computers, b) interpretive implementation of programming languages, and c) computability'.",
+        "topic": "Abstract Machines"
+    },
+    {
+        "question": "Choose the correct statements. A class of languages that is closed under _.",
+        "answers": [
+            "a",
+            "b"
+        ],
+        "options": {
+            "a": "union and complementation has to be closed under intersection",
+            "b": "intersection and complementation has to be closed under union",
+            "c": "union and intersection has to be closed under complementation",
+            "d": "all of the above"
+        },
+        "explanation": "The first two options can be proved to be correct using De Morgan's laws. Option (c) can be disproved by the following counter-example. Let the universal set U be (a, b, c, d,). Let A={{a}, {d}, {a, d}, {b, d}, {a, b, d}, {}}. A is closed under union and intersection but is not closed under complementation. For example complement of {a, d} is {b, c}, which is not a member of A.",
+        "topic": "Programming Languages"
+    },
+    {
+        "question": "Which of the following conversion is not possible algorithmicaly?",
+        "answers": [
+            "c"
+        ],
+        "options": {
+            "a": "Regular grammar to context free grammar",
+            "b": "Non-deterministic FSA to deterministic FSA",
+            "c": "Non-deterministic PDA to deterministic PDA",
+            "d": "Non-deterministic Turing machine to deterministic Turing machine"
+        },
+        "explanation": "The correct answer is 'c) Non-deterministic PDA to deterministic PDA'. A non-deterministic push down automaton (NPDA) is a type of push down automaton (PDA) that can recognize a broader class of languages than a deterministic push down automaton (DPDA). This means that a NPDA can recognize languages that cannot be recognized by a DPDA. Therefore, it is not possible to convert a NPDA to a DPDA algorithmically. Therefore, the correct answer is 'c) Non-deterministic PDA to deterministic PDA'.",
+        "topic": "Programming Languages"
+    }
+]
