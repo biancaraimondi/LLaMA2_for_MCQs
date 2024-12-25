@@ -75,7 +75,7 @@ This repository is released under the [Apache 2.0](https://github.com/biancaraim
 ## Citation
 If you use this code in your research, please cite the following paper:
 ```
-@article{TODO add citation,
+@article{TODO citation,
   title={Affordably Fine-tuned LLMs Provide Better Answers to Course-specific MCQs},
   author={TODO add authors},
   journal={TODO add journal},
