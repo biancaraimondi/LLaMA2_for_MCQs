@@ -1,5 +1,5 @@
 # Affordably Fine-tuned LLMs Provide Better Answers to Course-specific MCQs
-This repository is the code base for the paper: [Affordably Fine-tuned LLMs Provide Better Answers to Course-specific MCQs](TODO add link for arXiv or conference). The code is based on the [litgpt](https://github.com/Lightning-AI/litgpt) repository.
+This repository is the code base for the paper: [Affordably Fine-tuned LLMs Provide Better Answers to Course-specific MCQs](https://arxiv.org/abs/2501.05891)). The code is based on the [litgpt](https://github.com/Lightning-AI/litgpt) repository.
 
 ## Getting started
 Clone the repository and install the requirements:
@@ -75,10 +75,13 @@ This repository is released under the [Apache 2.0](https://github.com/biancaraim
 ## Citation
 If you use this code in your research, please cite the following paper:
 ```
-@article{TODO citation,
-  title={Affordably Fine-tuned LLMs Provide Better Answers to Course-specific MCQs},
-  author={TODO add authors},
-  journal={TODO add journal},
-  year={TODO add year}
+@misc{raimondi2025affordablyfinetunedllmsprovide,
+      title={Affordably Fine-tuned LLMs Provide Better Answers to Course-specific MCQs}, 
+      author={Bianca Raimondi and Saverio Giallorenzo and Maurizio Gabbrielli},
+      year={2025},
+      eprint={2501.05891},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2501.05891}, 
 }
 ```
