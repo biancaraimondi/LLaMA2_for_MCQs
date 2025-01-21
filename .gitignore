@@ -1,0 +1,13 @@
+checkpoints
+data/book
+data/plots
+data/results
+data/verified_results
+data/all_results.csv
+data/all_results_correct.csv
+data/.DS_Store
+
+out
+todo.txt
+
+venv
