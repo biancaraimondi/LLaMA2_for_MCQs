@@ -75,13 +75,11 @@ This repository is released under the [Apache 2.0](https://github.com/biancaraim
 ## Citation
 If you use this code in your research, please cite the following paper:
 ```
-@misc{raimondi2025affordablyfinetunedllmsprovide,
-      title={Affordably Fine-tuned LLMs Provide Better Answers to Course-specific MCQs}, 
-      author={Bianca Raimondi and Saverio Giallorenzo and Maurizio Gabbrielli},
-      year={2025},
-      eprint={2501.05891},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2501.05891}, 
+@inproceedings{raimondi2025affordably,
+  title={Affordably Fine-tuned LLMs Provide Better Answers to Course-specific MCQs},
+  author={Raimondi, Bianca and Giallorenzo, Saverio and Gabbrielli, Maurizio},
+  booktitle={Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing},
+  pages={32--39},
+  year={2025}
 }
 ```
